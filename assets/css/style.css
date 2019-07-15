@@ -9,20 +9,69 @@
 body {
   font-family: 'Lato', sans-serif; }
 
-.homepage header {
+.homepage .header {
   background: #121111;
   width: 100%;
   position: fixed;
+  opacity: 1;
   z-index: 100; }
-  .homepage header .header-block {
+  .homepage .header.header-opacity {
+    background: rgba(18, 17, 17, 0.8); }
+    .homepage .header.header-opacity .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .homepage .header.header-opacity .header-block .logo {
+        width: 70px; }
+        .homepage .header.header-opacity .header-block .logo img {
+          width: 100%; }
+      .homepage .header.header-opacity .header-block .menu .ph-nav-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        list-style: none; }
+        .homepage .header.header-opacity .header-block .menu .ph-nav-items li {
+          padding: 35px 20px;
+          border-top: 2px solid transparent;
+          transition: all 0.4s ease-in-out; }
+          .homepage .header.header-opacity .header-block .menu .ph-nav-items li a {
+            color: #f5f5f5;
+            font-size: 18px;
+            font-weight: 300;
+            height: 20px;
+            transition: all 0.4s ease-in-out; }
+            .homepage .header.header-opacity .header-block .menu .ph-nav-items li a:focus {
+              text-decoration: none; }
+          .homepage .header.header-opacity .header-block .menu .ph-nav-items li:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-top: 2px solid white; }
+            .homepage .header.header-opacity .header-block .menu .ph-nav-items li:hover a {
+              text-decoration: none;
+              color: white; }
+      .homepage .header.header-opacity .header-block .authorisation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: white; }
+        .homepage .header.header-opacity .header-block .authorisation p {
+          margin: 0; }
+        .homepage .header.header-opacity .header-block .authorisation img {
+          margin: 10px 0; }
+        .homepage .header.header-opacity .header-block .authorisation .login {
+          margin-right: 20px; }
+  .homepage .header .header-block {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .homepage header .header-block .logo {
+    .homepage .header .header-block .logo {
       width: 80px; }
-      .homepage header .header-block .logo img {
+      .homepage .header .header-block .logo img {
         width: 100%; }
-    .homepage header .header-block .menu .ph-nav-items {
+    .homepage .header .header-block .menu .ph-nav-items {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -30,35 +79,35 @@ body {
       padding: 0;
       font-size: 0;
       list-style: none; }
-      .homepage header .header-block .menu .ph-nav-items li {
+      .homepage .header .header-block .menu .ph-nav-items li {
         padding: 45px 20px;
         border-top: 2px solid transparent;
         transition: all 0.4s ease-in-out; }
-        .homepage header .header-block .menu .ph-nav-items li a {
+        .homepage .header .header-block .menu .ph-nav-items li a {
           color: #f5f5f5;
           font-size: 18px;
           font-weight: 300;
           height: 20px;
           transition: all 0.4s ease-in-out; }
-          .homepage header .header-block .menu .ph-nav-items li a:focus {
+          .homepage .header .header-block .menu .ph-nav-items li a:focus {
             text-decoration: none; }
-        .homepage header .header-block .menu .ph-nav-items li:hover {
+        .homepage .header .header-block .menu .ph-nav-items li:hover {
           background: rgba(255, 255, 255, 0.05);
           border-top: 2px solid white; }
-          .homepage header .header-block .menu .ph-nav-items li:hover a {
+          .homepage .header .header-block .menu .ph-nav-items li:hover a {
             text-decoration: none;
             color: white; }
-    .homepage header .header-block .authorisation {
+    .homepage .header .header-block .authorisation {
       display: flex;
       justify-content: space-between;
       align-items: center;
       text-align: center;
       color: white; }
-      .homepage header .header-block .authorisation p {
+      .homepage .header .header-block .authorisation p {
         margin: 0; }
-      .homepage header .header-block .authorisation img {
+      .homepage .header .header-block .authorisation img {
         margin: 10px 0; }
-      .homepage header .header-block .authorisation .login {
+      .homepage .header .header-block .authorisation .login {
         margin-right: 20px; }
 
 .homepage .banner {
