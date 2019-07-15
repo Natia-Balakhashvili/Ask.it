@@ -7,7 +7,8 @@
   outline: none; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth; }
 
 .homepage .header {
   background: #121111;
@@ -17,52 +18,14 @@ body {
   z-index: 100; }
   .homepage .header.header-opacity {
     background: rgba(18, 17, 17, 0.8); }
-    .homepage .header.header-opacity .header-block {
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .homepage .header.header-opacity .header-block .logo {
-        width: 70px; }
-        .homepage .header.header-opacity .header-block .logo img {
-          width: 100%; }
-      .homepage .header.header-opacity .header-block .menu .ph-nav-items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        font-size: 0;
-        list-style: none; }
-        .homepage .header.header-opacity .header-block .menu .ph-nav-items li {
-          padding: 35px 20px;
-          border-top: 2px solid transparent;
-          transition: all 0.4s ease-in-out; }
-          .homepage .header.header-opacity .header-block .menu .ph-nav-items li a {
-            color: #f5f5f5;
-            font-size: 18px;
-            font-weight: 300;
-            height: 20px;
-            transition: all 0.4s ease-in-out; }
-            .homepage .header.header-opacity .header-block .menu .ph-nav-items li a:focus {
-              text-decoration: none; }
-          .homepage .header.header-opacity .header-block .menu .ph-nav-items li:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-top: 2px solid white; }
-            .homepage .header.header-opacity .header-block .menu .ph-nav-items li:hover a {
-              text-decoration: none;
-              color: white; }
-      .homepage .header.header-opacity .header-block .authorisation {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        color: white; }
-        .homepage .header.header-opacity .header-block .authorisation p {
-          margin: 0; }
-        .homepage .header.header-opacity .header-block .authorisation img {
-          margin: 10px 0; }
-        .homepage .header.header-opacity .header-block .authorisation .login {
-          margin-right: 20px; }
+    .homepage .header.header-opacity .header-block .logo {
+      width: 70px; }
+      .homepage .header.header-opacity .header-block .logo img {
+        width: 100%; }
+    .homepage .header.header-opacity .header-block .menu .ph-nav-items li {
+      padding: 35px 20px;
+      border-top: 2px solid transparent;
+      transition: all 0.4s ease-in-out; }
   .homepage .header .header-block {
     display: flex;
     justify-content: space-between;
@@ -87,13 +50,15 @@ body {
           color: #f5f5f5;
           font-size: 18px;
           font-weight: 300;
+          scroll-behavior: smooth;
           height: 20px;
           transition: all 0.4s ease-in-out; }
           .homepage .header .header-block .menu .ph-nav-items li a:focus {
             text-decoration: none; }
         .homepage .header .header-block .menu .ph-nav-items li:hover {
           background: rgba(255, 255, 255, 0.05);
-          border-top: 2px solid white; }
+          border-top: 2px solid white;
+          cursor: pointer; }
           .homepage .header .header-block .menu .ph-nav-items li:hover a {
             text-decoration: none;
             color: white; }
@@ -106,7 +71,8 @@ body {
       .homepage .header .header-block .authorisation p {
         margin: 0; }
       .homepage .header .header-block .authorisation img {
-        margin: 10px 0; }
+        margin: 10px 0;
+        height: 26px; }
       .homepage .header .header-block .authorisation .login {
         margin-right: 20px; }
 
@@ -122,6 +88,70 @@ body {
     width: 100%;
     height: 100vh;
     position: relative; }
+    .homepage .banner .banner-bg .banner-text {
+      position: absolute;
+      top: 40%;
+      display: inline-block;
+      color: white;
+      transform: translateY(-50%); }
+      .homepage .banner .banner-bg .banner-text .banner-block-title {
+        display: inline-block;
+        position: relative; }
+        .homepage .banner .banner-bg .banner-text .banner-block-title .title {
+          font-weight: 700;
+          font-size: 52px; }
+        .homepage .banner .banner-bg .banner-text .banner-block-title img {
+          height: 22px;
+          position: absolute;
+          right: 0; }
+        .homepage .banner .banner-bg .banner-text .banner-block-title .text {
+          font-size: 36px;
+          padding-top: 50px;
+          text-align: center; }
+      .homepage .banner .banner-bg .banner-text .buttons {
+        position: absolute;
+        margin-top: 130px;
+        left: 30%;
+        transform: translateX(-60%); }
+        .homepage .banner .banner-bg .banner-text .buttons a {
+          font-size: 20px;
+          color: white;
+          background: transparent;
+          padding: 15px 40px;
+          text-decoration: none;
+          transform-style: preserve-3d;
+          position: relative;
+          transition: all 0.4s ease; }
+          .homepage .banner .banner-bg .banner-text .buttons a:before {
+            content: attr(title);
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 15px 40px;
+            background: white;
+            color: black;
+            border: 2px solid white;
+            transition: all 0.4s ease;
+            white-space: nowrap;
+            transform-origin: right;
+            transform: translateX(-100%) rotateY(90deg); }
+          .homepage .banner .banner-bg .banner-text .buttons a:after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            padding: 15px 20px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            transition: all 0.4s ease;
+            transform-origin: left;
+            transform: translateX(0) rotateY(0deg); }
+          .homepage .banner .banner-bg .banner-text .buttons a:hover:before {
+            transform: translateX(0) rotateY(0); }
+          .homepage .banner .banner-bg .banner-text .buttons a:hover:after {
+            transform: translateX(100%) rotateY(90deg); }
     .homepage .banner .banner-bg .iphone-frame {
       width: 300px;
       position: absolute;
@@ -200,12 +230,12 @@ body {
       margin-top: 20px;
       text-align: center; }
 
-.homepage .features {
+.homepage .interaction {
   background-color: #037693;
   color: white; }
-  .homepage .features .fluid {
+  .homepage .interaction .fluid {
     position: relative; }
-  .homepage .features .interaction-block {
+  .homepage .interaction .interaction-block {
     border: 1px solid white;
     width: 60px;
     height: 260px;
@@ -216,7 +246,7 @@ body {
     transform: translateX(-15%);
     padding: 20px;
     transition: all 0.4s ease-in-out; }
-    .homepage .features .interaction-block .interaction-title {
+    .homepage .interaction .interaction-block .interaction-title {
       position: relative;
       top: 110px;
       left: 0;
@@ -227,7 +257,7 @@ body {
       font-weight: 100;
       letter-spacing: 4px;
       transition: all 0.4s ease-in-out; }
-      .homepage .features .interaction-block .interaction-title:before {
+      .homepage .interaction .interaction-block .interaction-title:before {
         content: '';
         position: absolute;
         height: 1px;
@@ -237,7 +267,7 @@ body {
         background: white;
         transform: translateY(-50%);
         transition: all 0.4s ease-in-out; }
-      .homepage .features .interaction-block .interaction-title:after {
+      .homepage .interaction .interaction-block .interaction-title:after {
         content: '';
         position: absolute;
         height: 16px;
@@ -249,23 +279,23 @@ body {
         left: -66px;
         transform: translateY(-50%);
         transition: all 0.4s ease-in-out; }
-    .homepage .features .interaction-block:hover {
+    .homepage .interaction .interaction-block:hover {
       cursor: pointer; }
-      .homepage .features .interaction-block:hover .interaction-title:before {
+      .homepage .interaction .interaction-block:hover .interaction-title:before {
         left: -66px; }
-      .homepage .features .interaction-block:hover .interaction-title:after {
+      .homepage .interaction .interaction-block:hover .interaction-title:after {
         left: -16px; }
-  .homepage .features .wrapper {
+  .homepage .interaction .wrapper {
     padding: 40px 0; }
-    .homepage .features .wrapper .features-title {
+    .homepage .interaction .wrapper .interaction-title {
       font-size: 50px;
       font-weight: 700;
       max-width: 300px; }
-    .homepage .features .wrapper .features-desc {
+    .homepage .interaction .wrapper .interaction-desc {
       position: relative;
       font-size: 30px;
       margin: 20px 0; }
-      .homepage .features .wrapper .features-desc:after {
+      .homepage .interaction .wrapper .interaction-desc:after {
         content: '';
         position: absolute;
         bottom: 6px;
@@ -274,11 +304,11 @@ body {
         width: 200px;
         height: 2px;
         background: white; }
-    .homepage .features .wrapper .features-text {
+    .homepage .interaction .wrapper .interaction-text {
       font-size: 16px; }
-    .homepage .features .wrapper .features-image {
+    .homepage .interaction .wrapper .interaction-image {
       width: 100%; }
-      .homepage .features .wrapper .features-image img {
+      .homepage .interaction .wrapper .interaction-image img {
         width: 100%; }
 
 .homepage footer {
