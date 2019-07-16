@@ -2,14 +2,25 @@
 <html lang="en">
 
 <head>
-  <title>Document</title>
+  <title>AskVote.io</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta property="fb:app_id" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="http://<%=ogPath%>">
+  <meta property="og:image" content="http://">
+  <meta property="og:type" content="<%=ogType%>">
+
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
@@ -18,17 +29,16 @@
       <div class="container">
         <div class="header-block">
           <div class="logo" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000" data-aos-delay="300">
-            <img src="assets/images/logo.png" alt="...">
+            <a href="#"><img src="assets/images/logo.png" alt="..."></a>
           </div>
           <nav class="menu">
             <ul class="ph-nav-items" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000"
               data-aos-delay="600">
               <li><a href="#home">Home</a></li>
               <li><a href="#how-it-works">How it works</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Partners</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#partners">Partners</a></li>
+              <li><a href="#about-us">About us</a></li>
             </ul>
           </nav>
           <div class="authorisation" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1000"
@@ -168,15 +178,176 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <h1 class="title">Features</h1>
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4"></div>
-          <div class="col-md-4 col-sm-4 col-xs-4"></div>
-          <div class="col-md-4 col-sm-4 col-xs-4"></div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="each-feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+              data-aos-delay="0">
+              <div class="image">
+                <img src="assets/images/1.png" alt="...">
+              </div>
+              <div class="desc">Ask a question</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="each-feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+              data-aos-delay="200">
+              <div class="image">
+                <img src="assets/images/2.png" alt="...">
+              </div>
+              <div class="desc">Raise a poll</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="each-feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+              data-aos-delay="400">
+              <div class="image">
+                <img src="assets/images/3.png" alt="...">
+              </div>
+              <div class="desc">View statistics</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+                data-aos-delay="600">
+                <div class="image">
+                  <img src="assets/images/4.png" alt="...">
+                </div>
+                <div class="desc">Vote a question</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+                data-aos-delay="800">
+                <div class="image">
+                  <img src="assets/images/5.png" alt="...">
+                </div>
+                <div class="desc">Create a survey</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+              <div class="feature" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1000"
+                data-aos-delay="1000">
+                <div class="image">
+                  <img src="assets/images/6.png" alt="...">
+                </div>
+                <div class="desc">Privacy ensured</div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
+      </div>
+    </section>
+
+    <section class="partners" id="partners">
+      <div class="partners-block-bg">
+        <h1 class="title">Partners</h1>
+        <div class="owl-carousel owl-theme" data-aos="fade-in" data-aos-offset="50" data-aos-duration="1000"
+          data-aos-delay="300">
+          <div class="item">
+            <img src="assets/images/7.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/8.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/9.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/10.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/11.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/12.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/13.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/7.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/8.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/9.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/10.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/11.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/12.png" alt="...">
+          </div>
+          <div class="item">
+            <img src="assets/images/13.png" alt="...">
+          </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+      <div class="container-fluid fluid">
+        <div class="about-us-block" data-aos="fade-down" data-aos-offset="0" data-aos-duration="1000"
+          data-aos-delay="400">
+          <div class="about-us-title"> Know us </div>
+        </div>
+
+        <div class="container">
+          <h1 class="title">About us</h1>
+          <div class="row about-wrapper">
+            <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000"
+              data-aos-delay="400">
+              <div class="about-us-text-block">
+                <h1 class="about-title"> Who are we? </h1>
+                <h4 class="about-desc">What we can do for you</h4>
+                <p class="about-text">it’s never been easier to connect with people who speak
+                  this language. They want others to build up their self-image and confidence,
+                  and digital connectivity creates ample opportunity.<br><br> to tell your One option might
+                  be developing a blog series that focuses on industry wins, or spotlights
+                  ompanies that are doing something right. Or if you share an article
+                  with your network.</p>
+              </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000"
+              data-aos-delay="600">
+              <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="events">
+                    <div class="circle"></div>
+                    <div class="numbers">20,145</div>
+                    <div class="text">audience served</div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="events second">
+                    <div class="circle"></div>
+                    <div class="numbers">5480</div>
+                    <div class="text">hours of service</div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <div class="events third">
+                    <div class="circle"></div>
+                    <div class="numbers">715</div>
+                    <div class="text">event covered</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -184,7 +355,7 @@
       <div class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-3" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
+            <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
               data-aos-delay="0">
               <div class="logo">
                 <img src="assets/images/logo_white.png" alt="...">
@@ -196,7 +367,7 @@
                 application is to be used mainly by corporate and government customers.
               </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
+            <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
               data-aos-delay="100">
               <div class="footer-menu">
                 <div class="useful-links">
@@ -214,7 +385,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
+            <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
               data-aos-delay="200">
               <div class="footer-menu">
                 <div class="useful-links">
@@ -230,7 +401,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
+            <div class="col-md-3 col-sm-6 col-xs-12" data-aos="fade-in" data-aos-offset="0" data-aos-duration="1000"
               data-aos-delay="300">
               <div class="footer-menu">
                 <div class="useful-links text-center">
@@ -264,23 +435,8 @@
 
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/aos.js"></script>
-
-
-<script>
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 100) {
-      $(".header").addClass("header-opacity");
-    } else {
-      $("header").removeClass("header-opacity");
-    }
-
-
-  });
-
-  AOS.init();
-</script>
+<script src="assets/js/script.js"></script>
 
 </html>
