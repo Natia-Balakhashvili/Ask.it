@@ -10,6 +10,10 @@ $(document).ready(function () {
     }
   });
 
+  $(".menu-button").on("click", function () {
+    $(".menu-button, .responsive-navigation").toggleClass("active")
+  });
+
   AOS.init();
 
 });
@@ -27,9 +31,12 @@ $('.owl-carousel').owlCarousel({
       items: 2
     },
     768: {
-      items: 4
+      items: 3
     },
     992: {
+      items: 5
+    },
+    1200: {
       items: 7
     }
   }
