@@ -408,7 +408,8 @@ body {
       .homepage .interaction .wrapper .interaction-image {
         width: 100%;
         max-width: 400px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        padding: 30px 0; }
         .homepage .interaction .wrapper .interaction-image img {
           width: 100%; }
   .homepage .features {
@@ -652,7 +653,7 @@ body {
         content: '';
         position: absolute;
         bottom: 6px;
-        right: 120px;
+        right: 20px;
         padding-left: 10px;
         width: 120px;
         height: 2px;
@@ -825,6 +826,8 @@ body {
     margin: 30px 0; }
   .homepage .interaction .wrapper .interaction-title {
     max-width: none; }
+  .homepage .interaction .wrapper .interaction-image {
+    padding: 20px 0; }
   .homepage .features .title {
     margin-top: 0;
     margin-bottom: 40px; }
