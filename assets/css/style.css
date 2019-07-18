@@ -74,13 +74,19 @@ body {
         align-items: center;
         text-align: center;
         color: white; }
-        .homepage .header .header-block .authorisation p {
-          margin: 0; }
-        .homepage .header .header-block .authorisation img {
-          margin: 10px 0;
-          height: 26px; }
-        .homepage .header .header-block .authorisation .login {
+        .homepage .header .header-block .authorisation .registration.login {
           margin-right: 20px; }
+        .homepage .header .header-block .authorisation .registration a {
+          text-decoration: none;
+          color: white;
+          transition: all 0.4s ease-in; }
+          .homepage .header .header-block .authorisation .registration a p {
+            margin: 0; }
+          .homepage .header .header-block .authorisation .registration a img {
+            margin: 10px 0;
+            height: 26px; }
+        .homepage .header .header-block .authorisation .registration:hover a {
+          color: gray; }
       .homepage .header .header-block .menu-button {
         position: relative;
         outline: none;
@@ -169,12 +175,20 @@ body {
             flex-direction: column;
             color: white;
             cursor: pointer; }
-            .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive p {
-              margin: 0;
-              font-size: 20px; }
-            .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive img {
-              margin: 10px 0;
-              height: 26px; }
+            .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive .registration.login {
+              margin-right: 0; }
+            .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive .registration a {
+              text-decoration: none;
+              color: white;
+              font-size: 20px;
+              transition: all 0.4s ease-in; }
+              .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive .registration a p {
+                margin: 0; }
+              .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive .registration a img {
+                margin: 10px 0;
+                height: 26px; }
+            .homepage .header .header-block .responsive-navigation .menu-responsive .authorisation-responsive .registration:hover a {
+              color: gray; }
   .homepage .banner {
     width: 100%;
     height: 100vh;
@@ -854,9 +868,10 @@ body {
     .homepage .banner .banner-bg .banner-text .buttons {
       display: none; }
   .homepage .how-it-works {
-    margin: 50px 0; }
+    margin: 30px 0; }
     .homepage .how-it-works .title {
-      font-size: 40px; }
+      font-size: 40px;
+      margin-bottom: 50px; }
     .homepage .how-it-works .instruction .description {
       font-size: 16px; }
   .homepage .interaction .wrapper {
@@ -893,7 +908,8 @@ body {
   .homepage .partners .partners-block-bg {
     height: 300px; }
   .homepage .about-us .title {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-top: 0; }
   .homepage .about-us .about-us-text-block .about-title {
     font-size: 40px; }
   .homepage .about-us .about-us-text-block .about-desc {

@@ -6,29 +6,6 @@ $yellow: #f0a765;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
 
-
-
-// @font-face {
-//   font-family: 'lato-light', sans-serif;
-//   src: url('/assets/fonts/Lato-Light.ttf') format('ttf');
-// }
-
-// @font-face {
-//   font-family: 'lato-regular', sans-serif;
-//   src: url('/assets/fonts/Lato-Regular.ttf') format('ttf');
-// }
-
-// @font-face {
-//   font-family: 'lato-bold', sans-serif;
-//   src: url('/assets/fonts/Lato-Bold.ttf') format('ttf');
-// }
-
-// @font-face {
-//   font-family: 'lato-black', sans-serif;
-//   src: url('/assets/fonts/Lato-Black.ttf') format('ttf');
-// }
-
-
 * {
   margin: 0;
   padding: 0;
@@ -142,17 +119,34 @@ body {
         text-align: center;
         color: white;
 
-        p {
-          margin: 0;
-        }
+        .registration {
 
-        img {
-          margin: 10px 0;
-          height: 26px;
-        }
+          &.login {
+            margin-right: 20px;
+          }
 
-        .login {
-          margin-right: 20px;
+          a {
+            text-decoration: none;
+            color: white;
+
+            transition: all 0.4s ease-in;
+
+            p {
+              margin: 0;
+            }
+
+            img {
+              margin: 10px 0;
+              height: 26px;
+            }
+          }
+
+          &:hover {
+
+            a {
+              color: gray;
+            }
+          }
         }
       }
 
@@ -240,7 +234,6 @@ body {
             font-size: 0;
             list-style: none;
 
-
             li {
               padding: 10px 0;
               border-bottom: 2px solid transparent;
@@ -278,14 +271,34 @@ body {
             color: white;
             cursor: pointer;
 
-            p {
-              margin: 0;
-              font-size: 20px;
-            }
+            .registration {
 
-            img {
-              margin: 10px 0;
-              height: 26px;
+              &.login {
+                margin-right: 0;
+              }
+
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                transition: all 0.4s ease-in;
+
+                p {
+                  margin: 0;
+                }
+
+                img {
+                  margin: 10px 0;
+                  height: 26px;
+                }
+              }
+
+              &:hover {
+
+                a {
+                  color: gray;
+                }
+              }
             }
           }
         }
@@ -1167,18 +1180,9 @@ body {
 
 @media (max-width: 1440px) {
 
-  .homepage {
-
-    .banner {
-
-      .banner-bg {
-
-        .iphone-frame {
-          right: -8%;
-          transform: translate(-50%, 5%);
-        }
-      }
-    }
+  .homepage .banner .banner-bg .iphone-frame {
+    right: -8%;
+    transform: translate(-50%, 5%);
   }
 }
 
@@ -1304,10 +1308,11 @@ body {
     }
 
     .how-it-works {
-      margin: 50px 0;
+      margin: 30px 0;
 
       .title {
         font-size: 40px;
+        margin-bottom: 50px;
       }
 
       .instruction .description {
@@ -1386,6 +1391,7 @@ body {
 
       .title {
         font-size: 40px;
+        margin-top: 0;
       }
 
       .about-us-text-block {
